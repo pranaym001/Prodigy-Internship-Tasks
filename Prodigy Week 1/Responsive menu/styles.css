@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    color: rgb(206, 14, 14);
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 15px 20px;
+}
+
+nav ul li a {
+    color: rgb(184, 230, 173);
+    text-decoration: rgb(115, 255, 0);
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #47d4ff;
+}
+
+#content {
+    padding-top: 60px; /* Adjust based on nav height */
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+}
+
+#home {
+    background-color: lightblue;
+}
+
+#about {
+    background-color: rgb(197, 214, 102);
+}
+
+#services {
+    background-color: rgb(206, 113, 230);
+}
+
+#contact {
+    background-color: rgb(223, 150, 82);
+}
+
+html {
+    scroll-behavior: smooth;
+}
